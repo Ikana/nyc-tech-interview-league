@@ -11,9 +11,20 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        pastelPurple: '#C3A7E8',
+        pastelPink: '#F5C0C0',
+        pastelGreen: '#A7E8C3',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        serif: ['Georgia', 'serif'],
+      },
+      maxHeight: {
+        '0': '0',
+        'full': '100%',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
 export default config;
